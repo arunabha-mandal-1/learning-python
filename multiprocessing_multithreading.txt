@@ -1,0 +1,15 @@
+Multiprocessing vs Multithreading
+Both are the ways to achieve multitasking.
+Suppose mom is cooking, taking care of baby and answering phone call.
+If we open task manager, we can see different processing are going on and each process has its own process ID.
+Multiple threads which have its own virtual memory and address space(stack) are present in same process.
+Multiple threads under a particular process share a common space, e.g. a global variable is accessible by all the threads under the same process.
+
+Processes have their own address space.
+They communicate each other with a file, shared memory or a message pipe.
+
+Threads are lightweight.
+Processes are heavyweight.
+
+The benifit of Multiprocessing is that error or memory leak in one process won't hurt execution of another process.
+But the same is not applicable in case of Multithreading cus they run under a same process and one memory leak can affect others as well as the whole mother process.

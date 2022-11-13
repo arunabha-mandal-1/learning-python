@@ -1,0 +1,20 @@
+Python unit testing - skip/selectively run tests in pytest
+
+Topics : 
+    1. skip tests
+    2. selectively run tests using their name
+    3. custom markers
+
+'py.test -v -rxs' to see the reason of skipping
+
+## skipping
+# @pytest.mark.skip(reason="I don't want.") # to skip test
+# @pytest.mark.skipif(sys.version_info<(3,5), reason="Cuz version is greater than 3.5") # to skip test when a specific condtion meet
+
+## performing a certain test based on 'keyword' in the the test name
+>> pytest -k multiply
+
+## tag certain test using specific name or catagory(custom markers)
+# e.g. a program does run on MacOS and windows and i want to group tests based on the operating system
+>> pytest -m 'mark' -v
+>> pytest -m 'not mark' -v

@@ -1,0 +1,3 @@
+# pip install package_name -> to install a package
+# pip uninstall package_name -> to uninstall package name
+
