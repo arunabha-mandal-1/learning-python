@@ -55,7 +55,7 @@ mylist=["arunabha", "alex", "ankit"]
 print(mylist)
 mylist[0]="kittu"
 print(mylist)
-# point[0]=56 error
+# point[0]=56 #error
 
 # tuple e.g. : geometric point, address
 # list e.g. : expense list, list of names
