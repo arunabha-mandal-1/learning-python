@@ -17,6 +17,9 @@ def sum(a,b):
 def multiply(a,b=0.5):
     return a*b
 
+def divide(a,b): # to check positional arguments
+    return a/b
+
 def func(items):
     # Documentation string
     """
@@ -60,10 +63,11 @@ print("Joe's total expenses :", joes_total)
 # if you have long list of arguments and want to be specific about which argument has which value, the named args can be used
 # n=sum(b=10,a=3)
 # print(n)
-
+m=divide(b=10,a=2)
+print('m =',m)
 
 # Default arguments
-multiply_ans=multiply(10) # cuz a is provided  in the function
+multiply_ans=multiply(30) # cuz a is provided  in the function
 print(multiply_ans)
 
 # print(total)
